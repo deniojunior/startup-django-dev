@@ -17,3 +17,5 @@ py manage.py startapp app_name
 ```bash
 py manage.py runserver
 ```
+
+After that, access localhost:8000
