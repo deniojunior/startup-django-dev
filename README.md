@@ -14,7 +14,7 @@ py manage.py startapp app_name
 ```
 
 # Config settings.py
-* Include project_name in array INSTALLED_APP.
+* Include app_name in array INSTALLED_APP.
 * Edit LANGUAGE_CODE to your language.
 * Edite TIME_ZONE to your timezone.
 
@@ -23,6 +23,18 @@ py manage.py startapp app_name
 Create database structure
 ```bash
 py manage.py migrate
+```
+
+After edit models.py, adding the model classes, run:
+```bash
+py manage.py makemigration app_name
+py manage.py migrate
+```
+
+# Shell
+Python environment with project context
+```bash
+py manage.py shell
 ```
 
 # Run Server
